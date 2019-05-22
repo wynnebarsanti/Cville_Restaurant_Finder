@@ -7,12 +7,12 @@ class App extends React.Component {
 
   render(){
     return(
-      <div className="App">
-        <header style={{color: 'blue'}}>
-          <b>Charlottesville Restaurant Finder!</b>
-          </header>
+      <body>
+          <h1>
+          Charlottesville Restaurant Finder!
+          </h1>
         <Home />
-      </div>
+      </body>
     )
   }
 }

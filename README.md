@@ -1,8 +1,17 @@
+# Charlottesville Restaurant Finder
+
+## Description
+
+The purpose of this project is to return a list and a map of nearby Charlottesville Restaurants based on user input.
+
+## Installation
+
+## Usage
+
+
+# React App README
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Purpose
-
-The purpose of this project is to return a list and a map of nearby Charlottesville Restaurants based on user input. 
 
 ## Available Scripts
 

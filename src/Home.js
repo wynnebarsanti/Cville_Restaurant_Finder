@@ -4,23 +4,32 @@ import './App.css';
 import Recs from './Recs.js';
 
 
+
 class Home extends React.Component{
+    
     state = {
-        zipcode: 0,
-        radius: 0,
         searching: false,
-        reset: false
+        keyword: "",
+        price: 0,
+        rating: 0,
     }
 
-changeZipcode=(input)=>{
+
+changeKeyword=(input)=>{
     this.setState({
-        zipcode:input
+        keyword: input
     })
 }
 
-changeRadius=(input)=>{
+changePrice=(input)=>{
     this.setState({
-        radius: input
+        price: input
+    })
+}
+
+changeRating=(input)=>{
+    this.setState({
+        rating: input
     })
 }
 
@@ -32,9 +41,12 @@ searchClicked = () => {
 
 resetClicked=()=> {
     this.setState({
-        reset: true
+        keyword: "",
+        searching: false
     })
 }
+
+
 
 
 render(){
@@ -51,19 +63,32 @@ render(){
                 (e)=>{this.changeRadius(e.target.value)} }/>
         </div>
     */
+
+    
     return(
         <div className="App">
+        
+        
+            <input placeholder="Cuisine Type" onChange={
+                (e)=>{this.changeKeyword(e.target.value)} }/>
+            
+            <input placeholder="Max Price (1-3)" onChange={
+                (e)=>{this.changePrice(e.target.value)} }/>
+
+            <input placeholder="Min Rating (0-5)" onChange={
+                (e)=>{this.changeRating(e.target.value)} }/>
+
+            <button onClick= {this.searchClicked}>Search</button>
+
+            <button onClick={this.resetClicked}>Reset</button>
 
 
-        <button onClick={this.searchClicked}>Search</button>
-        {this.state.searching ? <Recs /*radius={this.state.radius}*//> : null}
+        {this.state.searching ? <Recs keyword={this.state.keyword} price={this.state.price}/> : null}
 
-        <button onClick={this.resetClicked}>Reset</button>
-        {this.state.reset ? <Home/> : null}
         </div>
+        
     )
 }
-
 }
 
 export default Home;

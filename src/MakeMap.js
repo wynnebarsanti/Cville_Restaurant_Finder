@@ -15,8 +15,8 @@ class MakeMap extends React.Component{
     componentDidMount(){
         this.map = L.map("map",{
             center:[38.0293, -78.4767],
-            zoom: 14,
-            zoomControl: true
+            zoom: 13,
+            zoomControl: false
         });
 
        let url = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}'
@@ -40,7 +40,7 @@ class MakeMap extends React.Component{
     }
 
     render(){
-        return <Wrapper width="720pxpx" height="500px" id='map' />
+        return <Wrapper width="50%" height="500px" id='map' />
     }
 
 }
