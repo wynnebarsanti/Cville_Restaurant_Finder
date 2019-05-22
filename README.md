@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Purpose
+
+The purpose of this project is to return a list of Charlottesville Restaurants
+based on user input. 
+
 ## Available Scripts
 
 In the project directory, you can run:
