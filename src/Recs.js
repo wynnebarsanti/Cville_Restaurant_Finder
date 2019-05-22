@@ -6,6 +6,7 @@ import axios from "axios";
 import MakeMap from './MakeMap';
 
 const API_KEY = process.env.REACT_APP_API_KEY
+const change = "i am making a change";
 
 class Recs extends React.Component{
 
@@ -47,8 +48,7 @@ componentDidMount(){
     let base = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=38.0293,-78.4767"
     //let coordinates = this.convertZipcode;
     //let rad = this.state.radius;
-    //let apiKey = "AIzaSyBQRbOl8Z5HnrY12zURP84C6Tdwsoy-HUI";
-   //let rad = this.props.radius * 1609.344;
+    //let rad = this.props.radius * 1609.344;
     let link = base + "&radius=1500" /*+ rad*/ + "&type=restaurant&opennow" /* + &keyword=xxxxx */ + "&key=" + API_KEY;
 
     axios.get(link).then(
