@@ -2,8 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Purpose
 
-The purpose of this project is to return a list of Charlottesville Restaurants
-based on user input. 
+The purpose of this project is to return a list and a map of nearby Charlottesville Restaurants based on user input. 
 
 ## Available Scripts
 
