@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: azure;
 }
 
 .App-logo {
@@ -32,3 +31,65 @@
     transform: rotate(360deg);
   }
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.list {
+  scroll-behavior: smooth;
+}
+
+.listitem{
+  background: rgba(255, 255 ,255, .75);
+  text-align: center;
+  padding: 5px;
+}
+
+.address{
+  font-size: 12px;
+}
+
+body {
+  background: url("https://img.freepik.com/free-photo/background-blurry-restaurant-shop-interior_1203-4031.jpg?size=626&ext=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+b1{
+  text-align: center;
+}
+
+h1 {
+  text-align:center;
+  color: whitesmoke;
+  background: rgba(13, 126, 255, 0.5);
+  font-family: Impact;
+  font-size: 50px;
+  margin: 0px;
+  padding: 10px
+}
+
+h2 {
+  text-align: left;
+  color:black;
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+li {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.5);
+  list-style: none;
+  padding: 10px
+}
+
+
+/*list-style-image: url('http://cdn.shopify.com/s/files/1/0219/2354/products/PlanetBox_Fork_and_Spoon_Stainless_Steel_grande.png?v=1501618972');
+list-style-position: outside;
+*/
