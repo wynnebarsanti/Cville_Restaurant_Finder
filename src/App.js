@@ -9,7 +9,7 @@ class App extends React.Component {
     return(
       <body>
           <h1>
-          Charlottesville Restaurant Finder!
+            Find a Restaurant Near You!
           </h1>
         <Home />
       </body>

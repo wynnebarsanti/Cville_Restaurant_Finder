@@ -35,6 +35,8 @@
 .content {
   display: flex;
   flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
 }
 
 .list {
@@ -50,9 +52,13 @@
 .address{
   font-size: 12px;
 }
+
 body {
-  background: url("http://www.wchv.com/wp-content/uploads/sites/20/2019/03/Charlottesville_Virginia.jpg");
+  background: url("https://img.freepik.com/free-photo/background-blurry-restaurant-shop-interior_1203-4031.jpg?size=626&ext=jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 b1{
@@ -63,8 +69,10 @@ h1 {
   text-align:center;
   color: whitesmoke;
   background: rgba(13, 126, 255, 0.5);
-  font-family: sans-serif;
+  font-family: Impact;
+  font-size: 50px;
   margin: 0px;
+  padding: 10px
 }
 
 h2 {
